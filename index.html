@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id ="data"> This is a example</p>
+    <button onclick="startTimer()"> startTimer</button>
+    <button onclick="stopTimer()"> stopTimer</button>
+    <script>
+        let myData = document.querySelector("#data");
+        let num=0;
+        let timeref;
+
+        function welcome(){
+            myData.innerHTML="Welcome to this page";
+        }
+
+        function startTimer(){
+            myData.innerHTML="Loading data";
+            setTimeout(welcome,5000)
+            timeref = setInterval(() => {
+                myData.innerHTML=`Times count ${num}`;
+                num++
+                
+            }, 3000);
+
+        }
+        function stopTimer()
+        {  clearInterval(timeref);
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "array",
+  "version": "1.0.0",
+  "description": "This is for study purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vijay",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
